@@ -1,10 +1,24 @@
 package application;
 
+import java.util.Date;
+
+import entities.Order;
+import entities.enums.OrderStatus;
+
 public class Program {
 
 	public static void main(String[] args) {
-		System.out.println("ola");
-
+		
+		
+		Order order = new Order(1080, new Date(), OrderStatus.PAGAMENTO_PENDENTE);
+		
+		
+		System.out.println(order);
+		
+		
+		
 	}
+	
 
+	
 }
